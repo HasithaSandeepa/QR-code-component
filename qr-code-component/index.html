@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Outfit:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | QR code component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .container {
+        background-color: hsl(0, 0%, 100%);
+        width: 21%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10%;
+        border-radius: 10px;
+      }
+
+      .qr-code {
+        padding: 18px 18px 0px 18px;
+      }
+
+      .qr-code img {
+        width: 100%;
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 10px;
+      }
+
+      .content {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+      }
+
+      .content h1,
+      p {
+        /* border: 2px solid red; */
+        text-align: center;
+        font-family: Outfit;
+        padding: 0px 20px 20px 20px;
+      }
+
+      .content h1 {
+        font-size: 20px;
+        font-weight: 700;
+      }
+
+      .content p {
+        font-size: 15px;
+        font-weight: 400;
+        text-align: center;
+      }
+
+      .attribution {
+        margin-top: 0.5%;
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+
+      @media only screen and (max-width: 1200px) {
+        .content h1 {
+          font-size: 17px;
+        }
+        .content p {
+          font-size: 12px;
+        }
+        .attribution {
+          font-size: 9px;
+        }
+      }
+      @media only screen and (max-width: 600px) {
+        .container .qr-code img {
+          border-radius: 5px;
+        }
+        .qr-code {
+          padding: 8px 8px 0px 8px;
+        }
+        .content h1,
+        p {
+          padding: 0px 8px 8px 8px;
+        }
+        .content h1 {
+          font-size: 9px;
+        }
+        .content p {
+          font-size: 7px;
+          padding-bottom: 20px;
+        }
+        .attribution {
+          font-size: 4px;
+        }
+      }
+      @media only screen and (max-width: 400px) {
+        .container .qr-code img {
+          border-radius: 5px;
+        }
+        .qr-code {
+          padding: 5px 5px 0px 5px;
+        }
+        .content h1,
+        p {
+          padding: 0px 5px 5px 5px;
+        }
+        .content h1 {
+          font-size: 5px;
+        }
+        .content p {
+          font-size: 4px;
+          padding-bottom: 10px;
+        }
+        .attribution {
+          font-size: 2.5px;
+        }
+      }
+    </style>
+  </head>
+  <body style="background-color: hsl(0, 0%, 82%)">
+    <div class="container">
+      <div class="qr-code">
+        <img src="./images/image-qr-code.png" alt="" srcset="" />
+      </div>
+      <div class="content">
+        <h1>Improve your front-end skills by building projects</h1>
+        <p>
+          Scan the QR code to visit Frontend Mentor and take your coding skills
+          to the next level
+        </p>
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="https://www.linkedin.com/in/hasitha-sandeepa/"
+        >Hasitha Sandeepa</a
+      >.
+    </div>
+  </body>
+</html>
